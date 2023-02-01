@@ -1,0 +1,81 @@
+:root {
+    --primary: #FFFFFF;
+    --font-family: 'PT Sans', sans-serif;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu_opciones {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.menu_opciones--logo {
+    width: 200px;
+    height: 100%;
+}
+
+.menu_opciones--logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu_opciones .memu_opciones--nombre {
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.menu_opciones .memu_opciones--nombre .nombreservicio {
+    padding: 14px;
+    margin: auto;
+    font-size: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.menu_opciones .menu_opciones--iconmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_opciones--iconmenu .opciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opciones .opciones_list{
+    padding: 40px;
+    font-size: 24px;
+    list-style: none;
+}
+
+
+@media screen and (max-width: 767px) {
+    .menu_opciones--iconmenu .opciones{
+        display: none;
+    }
+
+    .menu_opciones .memu_opciones--nombre {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+
+    .menu_opciones .memu_opciones--nombre .nombreservicio {
+        font-size: 24px;
+    }
+
+}
