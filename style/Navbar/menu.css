@@ -1,81 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-    --primary: #FFFFFF;
-    --font-family: 'PT Sans', sans-serif;
+    --primary: #ffffff;
+    --secundary: #2E4878;
+    --tertiary: #CD006E;
+    --quaternary: #4B4A4A;
+    --fithyn: #D87500;
+    --body: #efefef;
 }
 
-.menu {
-    display: flex;
+
+
+/*Barra de navegación*/
+nav {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contimg{
+    height: 80px;
+    width: 80px;
+    padding: 8px;
+}
+
+.contimg img {
+    height: 100%;
     width: 100%;
-    height: 100px;
-    background-color: var(--primary);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.menu_opciones {
+.carousel-item img{
+    filter: brightness(50%); 
+}
+
+/*============================header============================*/
+.contahacemos {
+    height: 900px;
+    margin-top: 24px;
+    padding: 16px;
     width: 100%;
-    height: 100%;
+
+}
+
+.contahacemos .contahacemos-items{
     display: flex;
+    flex-direction: column;
 }
 
-.menu_opciones--logo {
-    width: 200px;
-    height: 100%;
-}
-
-.menu_opciones--logo img {
+.contahacemos-items__image {
     width: 100%;
-    height: 100%;
+    height: 200px;
+    background-image: url('../../assets/images/atencion-cliente.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    padding: 12px;
+    margin-bottom: 24px;
 }
 
-.menu_opciones .memu_opciones--nombre {
-    width: 40%;
-    height: 100%;
-    display: flex;
+.contahacemos-items__info{
+    padding: 12px;
 }
 
-.menu_opciones .memu_opciones--nombre .nombreservicio {
-    padding: 14px;
-    margin: auto;
+.contahacemos-items__info h1 {
+    color: var(--secundary);
     font-size: 40px;
-    font-family: var(--font-family);
     font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
-.menu_opciones .menu_opciones--iconmenu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contahacemos-items__info hr {
+    border: solid 3px var(--secundary);
+}
+
+.contahacemos-items__info p {
+    color: slategray;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 24px;
+}
+
+/*==============================Servicios====================*/
+.servicios {   
+    background-color: var(--body);
+    height: auto;
     width: 100%;
-    height: 100%;
-}
-
-.menu_opciones--iconmenu .opciones{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    background-color: var(--body);
+}
+
+.servicios h1 {
+    color: var(--secundary);
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 14px;
+    padding: 12px;
+    text-align: center;
+}
+
+.servicios .card {
+    height: 346px;
+    background-image: url('../../assets/images/1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.opciones .opciones_list{
-    padding: 40px;
-    font-size: 24px;
-    list-style: none;
+.card-body h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-body h3, p {
+    color: var(--primary);
+}
+
+.card-body p {
+    text-align: justify;
+}
+
+.btn-contact {
+    background-color: var(--secundary);
 }
 
 
-@media screen and (max-width: 767px) {
-    .menu_opciones--iconmenu .opciones{
-        display: none;
-    }
+/*==============================Ofrecemos====================*/
 
-    .menu_opciones .memu_opciones--nombre {
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-    
 
-    .menu_opciones .memu_opciones--nombre .nombreservicio {
-        font-size: 24px;
-    }
 
+.card-body .icon {
+    color: var(--secundary);
 }
