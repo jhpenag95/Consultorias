@@ -1,0 +1,15 @@
+<form id="contact-form" onsubmit="sendEmail(event)">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name" required minlength="3" maxlength="50"><br>
+  
+    <label for="subject">Asunto:</label>
+    <input type="text" name="subject" id="subject" required maxlength="100"><br>
+  
+    <label for="email">Correo:</label>
+    <input type="email" name="email" id="email" required><br>
+  
+    <label for="message">Mensaje:</label>
+    <textarea name="message" id="message" required minlength="10" maxlength="500"></textarea><br>
+  
+    <input type="submit" value="Enviar">
+  </form>

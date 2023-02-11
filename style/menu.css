@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+
+:root {
+    --primary: #ffffff;
+    --secundary: #2E4878;
+    --tertiary: #CD006E;
+    --quaternary: #4B4A4A;
+    --fithyn: #D87500;
+    --body: #efefef;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    padding: 12px; 
+    text-align: center;
+}
+
+
+
+/*Barra de navegación*/
+nav {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contimg{
+    height: 80px;
+    width: 80px;
+    padding: 8px;
+}
+
+.contimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item img{
+    filter: brightness(50%); 
+}
+
