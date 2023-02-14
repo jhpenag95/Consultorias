@@ -86,3 +86,47 @@ h2 {
 }
     
 }
+
+
+@media (min-width: 1000px) {
+    .carousel-inner {
+        height: 600px;
+    }
+
+    .carousel-caption{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-item {
+        height: 460px;
+    }
+    
+    .carousel-caption h5 p.p1 {
+        font-size: 50px;
+     }
+     
+     .carousel-caption h5 p.p2 {
+        text-align: center;
+        font-size: 60px;
+        width: 300px;
+        background-color: #efefef;
+        margin: 20px auto;
+     }
+     
+     .carousel-caption  p.p3 {
+         font-size: 20px;
+     }
+
+     .btncontact {
+
+        font-weight: 600;
+        font-size: 16px;
+        height: 36px;
+        width: 100px;
+    }
+     
+
+}
