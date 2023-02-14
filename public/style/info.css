@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -54,11 +54,24 @@ h3 {
     width: 100%;
     display: flex;
     align-items: center;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.info .info-cont .tetx{
+.info .info-cont .icons svg{
+    text-align: center;
+    width: 10%;
+}
+
+.text_pagos{
+    font-size: 12px;
     text-align: center;
     width: 100%;
+}
+.text-atencion{
+    font-size: 12px;
 }
 
 
