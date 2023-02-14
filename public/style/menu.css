@@ -30,6 +30,25 @@ h2 {
 nav {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.nav-link, .title-pg{
+    color: var(--secundary);
+    font-weight: 600;
+}
+
+.btncontact  {
+    border: none;
+    background-color: var(--secundary);
+    transition: all 1s;
+    font-weight: 400;
+}
+
+.btncontact:hover  {
+    background-color: var(--primary);
+    color: var(--secundary);
+    font-weight: 400;
+}
+
 .contimg{
     height: 80px;
     width: 80px;

@@ -81,5 +81,10 @@ h2 {
 
 .btn-contact {
     background-color: var(--secundary);
+    transition: all 1s;
 }
 
+.btn-contact:hover {
+    background-color: var(--primary);
+    color: var(--secundary);
+}
