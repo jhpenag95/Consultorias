@@ -54,7 +54,7 @@ h2 {
 
 
 
-.card-body-cont {
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
