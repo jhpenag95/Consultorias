@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
 }
 
 :root {
@@ -24,3 +25,15 @@ h2 {
 
 
 /*============================header============================*/
+
+.carousel-item {
+    height: 200px;
+}
+.carousel-caption .p-3{
+    font-size: 8px
+}
+
+.btncontact {
+    height: 12px;
+    font-size: 10px;
+}
