@@ -53,7 +53,8 @@ h2 {
 }
 
 
-.card-body {
+
+.card-body-cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,13 +72,16 @@ h2 {
     margin-bottom: 10px;
 }
 
-.card-body h3, p {
+.card-body h3, .text-services {
     color: var(--primary);
 }
 
-.card-body p {
+.card-body .text-services {
     text-align: justify;
+    font-size: 12px;
 }
+
+
 
 .btn-contact {
     background-color: var(--secundary);
@@ -87,4 +91,39 @@ h2 {
 .btn-contact:hover {
     background-color: var(--primary);
     color: var(--secundary);
+}
+
+@media (min-width: 570px) {
+    .servicios-items {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .servicios-items .col-sm-6 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .card-body .text-services {
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+}
+
+
+@media (min-width: 1000px) {
+
+    .servicios {
+        height: 710px;
+    }
+
+    .servicios-items {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
 }

@@ -53,3 +53,36 @@ h2 {
     height: 24px;
 
 }
+
+
+@media (min-width: 700px) {
+    .carousel-inner {
+        height: 300px;
+    }
+
+    .carousel-item {
+        height: 260px;
+    }
+       
+    .carousel-caption h5 p.p1 {
+        font-size: 20px;
+     }
+     
+     .carousel-caption h5 p.p2 {
+        font-size: 40px;
+     }
+     
+     .carousel-caption  p.p3 {
+         font-size: 16px;
+     }
+     
+     
+.btncontact {
+
+    font-weight: 600;
+    font-size: 16px;
+    height: 36px;
+    width: 100px;
+}
+    
+}

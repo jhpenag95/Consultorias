@@ -70,8 +70,49 @@ h3 {
     text-align: center;
     width: 100%;
 }
+
 .text-atencion{
     font-size: 12px;
 }
 
+@media (min-width: 900px) {
+    .info {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
+
+
+@media (min-width: 1000px) { 
+    .info-cont {
+        width: 400px;
+    }
+
+    .info .info-cont .icons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info .info-cont .icons svg{
+        text-align: center;
+        width: 10%;
+    }
+    
+    .text_pagos{
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .text-atencion{
+        font-size: 18px;
+    }
+}

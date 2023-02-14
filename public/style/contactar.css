@@ -69,3 +69,16 @@ h2 {
 .contactar-cont__email .btn {
     background-color: var(--secundary);
 }
+
+@media (min-width: 900px) {
+    .contactar-cont {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contactar-cont {
+        height: 700px;
+    }
+}
